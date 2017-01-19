@@ -12,6 +12,7 @@
 		7368965D1E2F57BE00F07268 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7368965B1E2F57BE00F07268 /* Main.storyboard */; };
 		7368965F1E2F57BE00F07268 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7368965E1E2F57BE00F07268 /* Assets.xcassets */; };
 		736896621E2F57BE00F07268 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736896601E2F57BE00F07268 /* LaunchScreen.storyboard */; };
+		7368966A1E2F676300F07268 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736896691E2F676300F07268 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7368965E1E2F57BE00F07268 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		736896611E2F57BE00F07268 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		736896631E2F57BE00F07268 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		736896691E2F676300F07268 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		7368964B1E2F57BE00F07268 = {
 			isa = PBXGroup;
 			children = (
+				736896691E2F676300F07268 /* SettingsViewController.swift */,
 				736896561E2F57BE00F07268 /* Tipsy */,
 				736896551E2F57BE00F07268 /* Products */,
 			);
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					736896531E2F57BE00F07268 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = YMWERELY52;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			files = (
 				7368965A1E2F57BE00F07268 /* ViewController.swift in Sources */,
 				736896581E2F57BE00F07268 /* AppDelegate.swift in Sources */,
+				7368966A1E2F676300F07268 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +252,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.Tipsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tipsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Personal.Tipsy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
